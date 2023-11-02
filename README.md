@@ -18,8 +18,8 @@ To keep all files, and directories organized we created individual branches for 
 | `main`                  | prodction branch       | finished/bug free   |
 | `Brandon_Montezuma`     | author branch          | bio/notes   |
 | `manningstinson`        | author branch          | bio/notes  |
-| `main.c `               | contains main.c file   | Working   |
-| `main.h `               | contains main.h header file    | Working file   |
+| `main.c `               | contains main.c file   | working file   |
+| `main.h `               | contains main.h header file    | working file   |
 | `printf.c `             | custom printf function | working file   |
 | `putchar.c `            | custom putchar function| working file   |
 | `scratchpad `           | project scratchpad       | working file  |
