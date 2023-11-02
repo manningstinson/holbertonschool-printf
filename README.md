@@ -14,7 +14,7 @@ This project is a recreation of the printf function in the C standard library. I
 To keep all files, and directories organized we created individual branches for each major file.  This will assist in ensuring a clean file merge when everything is ready to be moved to the `main` (production) branch. Below is a list of all branches, and files with a description of its contents. 
 
 | Branch                  | Description   | Files    |
-| :---------------------: | :------------:| :--------: |
+| :---------------------: | :------------:| :---------------------: |
 | `main`                  | prodction branch          | finished/bug free   |
 | `Brandon_Montezuma`     | author branch         | bio/notes   |
 | `manningstinson`        | author branch         | bio/notes  |
