@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MANNING STINSON
 Personal folder for bio, review of project.
 =======
@@ -41,4 +40,3 @@ raw Markdown line up prettily. You can also use inline Markdown.
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3 -->
->>>>>>> cf2b3c44b5d31ff23327352ebb87e8b3d053cfed
