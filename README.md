@@ -22,7 +22,7 @@ To keep all files, and directories organized we created individual branches for 
 | `main.h `               | contains main.h header file    | Working file   |
 | `printf.c `             | custom printf function | working file   |
 | `putchar.c `            | custom putchar function| working file   |
-| `scratchpad `           | project scratchpad       | working   |
+| `scratchpad `           | project scratchpad       | working file  |
 | `print-format-specifier-% `      | %% format specifier        | working file   |
 | `print-format-specifier-c `      | char format specifier         | working file   |
 | `print-format-specifier-s `      | string format specifier         |  working file   |
