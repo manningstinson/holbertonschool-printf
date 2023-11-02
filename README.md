@@ -1,2 +1,2 @@
 # MANNING STINSON
-Holberton Printf project
+Personal folder for bio, review of project.
