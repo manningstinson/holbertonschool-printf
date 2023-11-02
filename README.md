@@ -1,2 +1,2 @@
-# holbertonschool-printf
+# MANNING STINSON
 Holberton Printf project
