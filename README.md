@@ -11,12 +11,21 @@ This project was a a collaborative effort between the below authors. You can vis
 This project is a recreation of the printf function in the C standard library. It was created as part of the Holberton School - Tulsa curriculum. 
 
 ## Branches & Files
-To keep all files, and directories organized we created individual branches for each major file.  This will assist in ensuring a clean file merge when everything is ready to be moved to the main (production) branch. Below is a list of all branches, and files with a description of its contents. 
+To keep all files, and directories organized we created individual branches for each major file.  This will assist in ensuring a clean file merge when everything is ready to be moved to the `main` (production) branch. Below is a list of all branches, and files with a description of its contents. 
 
-| Branch     | Description   | Files    |
-| :--------: | :--------:    | :--------: |
-| Cell 1     | Cell 2        | Cell 3   |
-| Cell 4     | Cell 5        | Cell 6   |
+| Branch                  | Description   | Files    |
+| :---------------------: | :------------:| :--------: |
+| `main`                  | prodction branch          | finished/bug free   |
+| `Brandon_Montezuma`     | author branch         | bio/notes   |
+| `manningstinson`        | author branch         | bio/notes  |
+| `main.c `      | Cell 5         | Working   |
+| `main.h `      | Cell 5         | Working   |
+| `printf.c `      | Cell 5         | Working   |
+| `putchar.c `      | Cell 5         | Working   |
+| `scratchpad `      | Cell 5         | Working   |
+| `print-format-specifier-% `      | Cell 5         | Working   |
+| `print-format-specifier-c `      | Cell 5         | Working   |
+| `print-format-specifier-c `      | Cell 5         | Working   |
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the 
