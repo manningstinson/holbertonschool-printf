@@ -13,19 +13,19 @@ This project is a recreation of the printf function in the C standard library. I
 ## Branches & Files
 To keep all files, and directories organized we created individual branches for each major file.  This will assist in ensuring a clean file merge when everything is ready to be moved to the `main` (production) branch. Below is a list of all branches, and files with a description of its contents. 
 
-| Branch                  | Description   | Files    |
-| :---------------------: | :------------:| :---------------------: |
-| `main`                  | prodction branch          | finished/bug free   |
-| `Brandon_Montezuma`     | author branch         | bio/notes   |
-| `manningstinson`        | author branch         | bio/notes  |
-| `main.c `      | contains main.c file that is entry point for application         | Working   |
-| `main.h `      |  contains main.h header file which hold declarations, and prototypes for functions.        | Working   |
-| `printf.c `      | Cell 5         | Working   |
-| `putchar.c `      | Cell 5         | Working   |
-| `scratchpad `      | group scratchpad for code snippets, brainstorming         | Working   |
-| `print-format-specifier-% `      | Cell 5         | Working   |
-| `print-format-specifier-c `      | Cell 5         | Working   |
-| `print-format-specifier-c `      | Cell 5         | Working   |
+| Branch                  | Description            |  Files                |
+| :---------------------- | :---------------------:| :---------------------: |
+| `main`                  | prodction branch       | finished/bug free   |
+| `Brandon_Montezuma`     | author branch          | bio/notes   |
+| `manningstinson`        | author branch          | bio/notes  |
+| `main.c `               | contains main.c file   | Working   |
+| `main.h `               | contains main.h header file    | Working file   |
+| `printf.c `             | Cell 5                 | working file   |
+| `putchar.c `            | Cell 5                 | working file   |
+| `scratchpad `           | project scratchpad       | working   |
+| `print-format-specifier-% `      | Cell 5         | working file   |
+| `print-format-specifier-c `      | Cell 5         | working file   |
+| `print-format-specifier-c `      | Cell 5         |  working file   |
 
 <!--
 
