@@ -20,12 +20,12 @@ To keep all files, and directories organized we created individual branches for 
 | `manningstinson`        | author branch          | bio/notes  |
 | `main.c `               | contains main.c file   | Working   |
 | `main.h `               | contains main.h header file    | Working file   |
-| `printf.c `             | Cell 5                 | working file   |
-| `putchar.c `            | Cell 5                 | working file   |
+| `printf.c `             | custom printf function | working file   |
+| `putchar.c `            | custom putchar function| working file   |
 | `scratchpad `           | project scratchpad       | working   |
-| `print-format-specifier-% `      | Cell 5         | working file   |
-| `print-format-specifier-c `      | Cell 5         | working file   |
-| `print-format-specifier-c `      | Cell 5         |  working file   |
+| `print-format-specifier-% `      | %% format specifier        | working file   |
+| `print-format-specifier-c `      | char format specifier         | working file   |
+| `print-format-specifier-s `      | string format specifier         |  working file   |
 
 <!--
 
