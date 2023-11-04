@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "main,h"
 
 char *liquidpirate(int n) {
     char temp[20];
