@@ -1,15 +1,24 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+<<<<<<< HEAD
 #ifndef HEADER
 #define HEADER
+=======
+>>>>>>> 2e5f58451f99adbb89439e2845c81dd4318acc22
 #include <stdarg.h>
 
 typedef struct formats
 {
+<<<<<<< HEAD
 	char spec;
 	int (*print_func)(va_list);
 } 
+=======
+        char spec;
+        int (*print_func)(va_list);
+}
+>>>>>>> 2e5f58451f99adbb89439e2845c81dd4318acc22
 
 formats_t;
 
