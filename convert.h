@@ -13,7 +13,7 @@ typedef struct loudpirate {
     char *(*conversion_function)(va_list args);
 } loudpirate_t;
 
-// Declaration of conversion functions
+/* Declaration of conversion functions*/
 char *convert_c(va_list args);
 char *convert_s(va_list args);
 char *convert_percent(va_list args);
