@@ -64,11 +64,7 @@ void convert_percent(void) {
     write_char('%');
 }
 
-void convert_decimal_integer(int n) {
+void convert_integer(int n) {
     char *str = liquidpirate(n);
     write_string(str);
-}
-
-void convert_integer(int n) {
-    convert_decimal_integer(n);
 }

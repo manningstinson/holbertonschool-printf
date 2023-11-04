@@ -1,5 +1,6 @@
-#ifndef CONVERT_H
-#define CONVERT_H
+#ifndef MAIN_H
+#define MAIN_H
+
 
 void convert_c(char c);
 void convert_s(const char *s);
