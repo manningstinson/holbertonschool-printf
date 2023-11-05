@@ -22,6 +22,5 @@ specifier_t get_specifier(char c)
         i++;
     }
 
-        return format[i];
+    return format[i];
 }
-

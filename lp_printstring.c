@@ -1,21 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 
-int _putstr(char *str)
-{
-    int len = 0;
-    while (str[len]) {
-        len += _putchar(str[len]);
-    }
-    return len;
-}
-
 int print_string(va_list args)
 {
+    int len = 0; 
+    int i = 0;
     char *str = va_arg(args, char *);
+
     if (str == NULL) {
         str = "(null)";
     }
-    return _putstr(str);
-}
 
+    while (str[i]) {
+        len += _putchar(str[i]);
+        i++;
+    }
+
+    return len;
+}
