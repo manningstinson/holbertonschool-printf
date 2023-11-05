@@ -1,4 +1,4 @@
-#include "lp_main.h"
+#include "main.h"
 #include <stdio.h>
 
 #include "lp_main.h"
