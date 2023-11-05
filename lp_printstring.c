@@ -1,14 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int print_string(va_list args)
-{
-    char *str = va_arg(args, char *);
-    if (str == NULL) {
-        str = "(null)";
-    }
-    return _putstr(str);
-}
+#include "main.h"
 
 int _putstr(char *str)
 {
@@ -17,5 +10,14 @@ int _putstr(char *str)
         len += _putchar(str[len]);
     }
     return len;
+}
+
+int print_string(va_list args)
+{
+    char *str = va_arg(args, char *);
+    if (str == NULL) {
+        str = "(null)";
+    }
+    return _putstr(str);
 }
 

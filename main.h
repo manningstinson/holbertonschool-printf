@@ -15,7 +15,7 @@ int print_char(va_list args);
 int print_string(va_list args);
 int print_percent(va_list args);
 int print_int(va_list args);
-int _putstr(char *str); // Add the declaration for _putstr
+int _putstr(char *str); 
 
 #endif
 
