@@ -2,10 +2,6 @@
 #include "main.h"
 #include <stddef.h>
 
-#include <stdarg.h>
-#include "lp_main.h"
-#include <stddef.h>
-
 int _printf(const char *format, ...)
 {
     va_list args;
