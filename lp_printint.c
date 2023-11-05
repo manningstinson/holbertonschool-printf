@@ -1,7 +1,7 @@
 #include "lp_main.h"
 #include <stdio.h>
 
-int _getint(va_list args)
+int print_int(va_list args)
 {
     int n = va_arg(args, int);
     int len = 0;
