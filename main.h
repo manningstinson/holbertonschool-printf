@@ -15,7 +15,6 @@ int print_char(va_list args);
 int print_string(va_list args);
 int print_percent(va_list args);
 int print_int(va_list args);
-int _putstr(char *str); 
+specifier_t get_specifier(char c);
 
 #endif
-

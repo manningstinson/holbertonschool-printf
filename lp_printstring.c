@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-#include "main.h"
-
 int _putstr(char *str)
 {
     int len = 0;
