@@ -4,12 +4,13 @@
 #include <stdio.h>
 
 /**
- * lp_get_formats - gets the appropriate function for the provided format character
+ * get_format - gets the appropriate function for the provided format character
  * @specifier: the provided format character
  *
  * Return: a pointer to the appropriate function
 */
-int (*lp_get_formats(char specifier))(va_list)
+
+int (*get_format(char specifier))(va_list)
 {
 
 	int i = 0;
