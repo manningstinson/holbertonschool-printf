@@ -22,7 +22,6 @@ specifier_t get_specifier(char c)
         i++;
     }
 
-    // Return a default specifier when not found
-    return format[i];
+        return format[i];
 }
 
