@@ -1,5 +1,5 @@
-#ifndef LP_MAIN_H
-#define LP_MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 #include <stddef.h>
 #include <stdarg.h>
 
