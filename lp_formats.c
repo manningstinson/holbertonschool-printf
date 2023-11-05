@@ -13,15 +13,12 @@ int _printf(const char *format, ...)
     va_start(args, format);
     while (*format)
     {
-        specifier_t specifier;
-        int (*specifier_func)(va_list);
-
         if (*format == '%')
         {
             format++;
-            specifier = get_specifier(*format);
-            specifier_func = specifier.print_func;
-
+            specifier_t specifier = get_specifier(*format);
+            int (*specifier_func)(va_list) = specifier.print_func;
+            
             if (specifier_func)
                 count += specifier_func(args);
             else if (*format)
