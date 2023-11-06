@@ -3,14 +3,15 @@
 # About lp_formats.c
 ## Explaining the code
 
-In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
+Certainly, let's break down the provided code into individual code blocks and explain it at a junior high level for your README.md document:
 
 ```c
 #include <stdarg.h>
 #include "main.h"
 #include <stddef.h>
 ```
-These lines include necessary header files. The `#include` statements help bring in code and functions that the program will use.
+
+These lines include necessary header files. `<stdarg.h>` is a standard C library header that provides support for handling variable numbers of arguments. "main.h" is a custom header file specific to your project, and `<stddef.h>` is another standard C library header.
 
 ```c
 /**
@@ -19,101 +20,52 @@ These lines include necessary header files. The `#include` statements help bring
  * Return: The number of characters printed (or -1 on error).
  */
 ```
-This comment block is a description of a function named `_printf`. It tells you that this function is supposed to behave like the `printf` function you may have used before, which is used to print text to the screen. The `@format` is a special way to describe that the function expects a string as an argument. The `Return` part tells you what the function will return.
+
+This is a comment block that describes a function named `_printf`. It explains what the function does, what it takes as an argument, and what it returns. In this case, it returns the number of characters printed or -1 on error.
 
 ```c
 int _printf(const char *format, ...)
-```
-This is the start of the `_printf` function. It takes a string called `format` as its argument and may also take additional arguments (denoted by `...`). In C, `...` is used to indicate a variable number of arguments.
-
-```c
-va_list args;
-int count = 0;
-```
-Here, we declare two variables. `va_list` is a data structure used to manage the variable arguments passed to the function. `args` will hold these variable arguments. `count` is initialized to zero and will be used to keep track of how many characters are printed.
-
-```c
-if (format == NULL)
-    return (-1);
-```
-This code checks if the `format` string is empty (NULL). If it is empty, the function returns -1 to indicate an error.
-
-```c
-va_start(args, format);
-```
-This line initializes the `args` variable, making it ready to read the variable arguments passed to the function.
-
-```c
-while (*format)
 {
-    // ...
+	va_list args;
+	int count = 0;
+
+	if (format == NULL)
+		return (-1);
+	va_start(args, format);
+```
+
+This code defines the `_printf` function. It takes a string called `format` and a variable number of arguments (`...`). It also initializes two variables: `args` of type `va_list` to manage the variable arguments and `count` to keep track of the number of characters printed.
+
+The `if` statement checks if the `format` string is empty (NULL). If it is, the function immediately returns -1 to indicate an error. Otherwise, it starts managing the variable arguments using `va_start`.
+
+```c
+	while (*format)
+	{
+		specifier_t specifier;
+		int (*specifier_func)(va_list);
+
+		if (*format == '%')
+		{
+			// ...
+		}
+		else
+		{
+			// ...
+		}
+		format++;
+	}
+```
+
+This section contains a `while` loop that iterates through each character in the `format` string. Inside the loop, two variables are declared: `specifier` of type `specifier_t` and `specifier_func` of type pointer to a function that takes a `va_list`.
+
+The loop checks if the current character is a '%' symbol (which indicates a format specifier). If it is, it processes the format specifier (indicated by `// ...` in the code). If the character is not '%', it treats it as regular text and prints it (indicated by `// ...` in the code). The `format++` statement is used to move to the next character in the format string.
+
+```c
+	va_end(args);
+	return (count);
 }
 ```
-This is a loop that goes through each character in the `format` string until it reaches the end (the null terminator, which is a special character denoted by `\0`).
 
-```c
-specifier_t specifier;
-int (*specifier_func)(va_list);
-```
-Inside the loop, these two variables are declared. `specifier` is used to store a format specifier (like `%s` or `%d`), and `specifier_func` is a pointer to a function that will handle the format specifier.
+At the end of the function, `va_end` is called to clean up and release the resources associated with the variable arguments. Then, the function returns the total count of characters printed in the `count` variable.
 
-```c
-if (*format == '%')
-{
-    // ...
-}
-```
-This code block checks if the current character is a '%' sign, which is a special character used in format specifiers.
-
-```c
-format++;
-specifier = get_specifier(*format);
-specifier_func = specifier.print_func;
-```
-If the current character is '%', it moves to the next character and then calls a function `get_specifier` to determine what kind of format specifier is being used. It assigns the result to `specifier` and gets the corresponding function to handle that specifier and assigns it to `specifier_func`.
-
-```c
-if (specifier_func)
-    count += specifier_func(args);
-```
-If a valid specifier function was found, it calls that function with the variable arguments stored in `args` and adds the number of characters it printed to the `count`.
-
-```c
-else if (*format)
-{
-    count += _putchar('%');
-    count += _putchar(*format);
-}
-```
-If there was no valid specifier function, it prints '%' and the character immediately after '%' (like `%A` would print 'A').
-
-```c
-else
-    return (-1);
-```
-If the '%' sign was at the end of the string (no character after it), it returns -1 to indicate an error.
-
-```c
-else
-{
-    count += _putchar(*format);
-}
-```
-If the current character is not '%' (i.e., just regular text), it prints that character and adds 1 to the `count`.
-
-```c
-format++;
-```
-Finally, after handling the current character, it moves to the next character in the `format` string and continues the loop.
-
-```c
-va_end(args);
-```
-After the loop is done, it cleans up and releases the resources associated with the variable arguments.
-
-```c
-return (count);
-```
-The function returns the total count of characters printed.
-
-
+In summary, this code defines a function `_printf` that emulates the behavior of the `printf` function. It takes a format string, processes it, and prints the corresponding values based on the format specifiers. It keeps track of the number of characters printed and returns that count or -1 in case of an error.
