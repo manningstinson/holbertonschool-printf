@@ -3,6 +3,8 @@
 # About lp_getformat.c
 ## Explaining the code
 
+In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
+
 ```c
 #include <stdarg.h>
 #include "main.h"
@@ -113,5 +115,3 @@ After the loop is done, it cleans up and releases the resources associated with 
 return (count);
 ```
 The function returns the total count of characters printed.
-
-In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
