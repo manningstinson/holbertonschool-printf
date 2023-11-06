@@ -30,5 +30,3 @@ int print_percent(va_list args)
 This code defines the `print_percent` function. It takes a variable argument list (`va_list`) as its argument, but it doesn't use it, so it includes `(void)args;` to avoid compiler warnings.
 
 Inside the function, it calls the `_putchar` function to print the percent symbol '%' to the standard output. Then, it returns the value 1 to indicate that one character has been printed.
-
-In summary, this code defines a function `print_percent` that prints a single percent symbol '%' to the standard output. It doesn't use the variable argument list (`args`), and it always returns 1 to indicate that one character has been printed.
