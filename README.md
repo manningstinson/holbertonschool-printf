@@ -3,6 +3,8 @@
 # About lp_printchar.c
 ## Explaining the code
 
+In summary, this code defines a function `_putchar` that writes a character to the standard output and returns the number of characters written or -1 on error. Additionally, it defines a function `print_char` that is used to print a character by calling `_putchar`. These functions are likely part of a larger program designed for formatting and printing text.
+
 ```c
 #include "main.h"
 #include <unistd.h>
@@ -40,5 +42,3 @@ int print_char(va_list args)
 ```
 
 This code defines a function called `print_char`. It takes a variable argument list `args` as its argument. It uses the `va_arg` function to extract a character from the variable argument list and assigns it to the variable `c`. Then, it calls the `_putchar` function, passing this character `c` as an argument. The return value of `_putchar` is returned by `print_char`.
-
-In summary, this code defines a function `_putchar` that writes a character to the standard output and returns the number of characters written or -1 on error. Additionally, it defines a function `print_char` that is used to print a character by calling `_putchar`. These functions are likely part of a larger program designed for formatting and printing text.
