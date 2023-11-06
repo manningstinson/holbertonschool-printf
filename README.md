@@ -3,6 +3,8 @@
 # About lp_printint.c
 ## Explaining the code
 
+In summary, this code defines a function `print_int` that takes an integer from a variable argument list and prints it to the standard output. It handles negative numbers, determines the number's magnitude, and iteratively extracts and prints each digit using `_putchar`. The function returns the total number of characters printed.
+
 ```c
 #include "main.h"
 #include <stdio.h>
@@ -50,5 +52,3 @@ This part of the code calculates the appropriate `divisor` value to divide the i
 }
 ```
 In this section, the code iteratively divides the integer `n` by the `divisor` to extract each digit from the number and print it. For each digit, it uses `_putchar` to print it and increments `len` to keep track of the number of characters printed. After printing all the digits, it returns the total length.
-
-In summary, this code defines a function `print_int` that takes an integer from a variable argument list and prints it to the standard output. It handles negative numbers, determines the number's magnitude, and iteratively extracts and prints each digit using `_putchar`. The function returns the total number of characters printed.
