@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_int - Prints an integer to the standard output.
+ * @args: A va_list containing the integer to be printed.
+ *
+ * Return: The number of characters printed.
+ */
+
 int print_int(va_list args)
 {
     int n = va_arg(args, int);
