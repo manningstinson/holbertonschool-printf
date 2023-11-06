@@ -2,7 +2,8 @@
 
 # About lp_printstring.c
 ## Explaining the code
-Sure, let's break down the provided code into individual code blocks and explain it at a junior high level for your README.md document:
+
+In summary, this code defines a function `print_string` that takes a string from a variable argument list and prints it to the standard output. It handles the case where the string is `NULL` by printing `"(null)"`. The function counts the number of characters printed and returns this count.
 
 ```c
 #include "main.h"
@@ -55,5 +56,3 @@ This part of the code uses a `while` loop to iterate through the characters in t
 ```
 
 Finally, the function returns the value of `len`, which represents the total number of characters printed from the string.
-
-In summary, this code defines a function `print_string` that takes a string from a variable argument list and prints it to the standard output. It handles the case where the string is `NULL` by printing `"(null)"`. The function counts the number of characters printed and returns this count.
