@@ -8,11 +8,17 @@
  * Return: On success, returns the number of characters written (1).
  *         On error, returns -1.
  */
-
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * print_char - Writes a character to the standard output using variable arg.
+ * @args: A va_list containing variable arguments.
+ *
+ * Return: On success, returns the number of characters written (1).
+ */
 
 int print_char(va_list args)
 {
@@ -20,3 +26,4 @@ int print_char(va_list args)
 
 	return (_putchar(c));
 }
+
