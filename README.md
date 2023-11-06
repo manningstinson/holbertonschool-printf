@@ -23,6 +23,7 @@ To keep all files, and directories organized we created individual branches for 
 | `lp_printint.c `            | print Integer Function | branch   |
 | `lp_printpercent.c `           | print Percent Function       | branch  |
 | `lp_printstring.c `           | print String Function       | branch  |
+| `scratchpad `           | scratchpad for testing       | branch  |
 | `main.h `           | header file       | branch  |
 | `man_3_printf `           | custom printf man file       |  file  |
 
