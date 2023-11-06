@@ -3,8 +3,6 @@
 # About lp_getformat.c
 ## Explaining the code
 
-Sure, I'll break down this code into individual code blocks and explain them at a junior high level.
-
 ```c
 #include <stdarg.h>
 #include "main.h"
