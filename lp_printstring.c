@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_string - Prints a string to the standard output.
+ * @args: A va_list containing the string to be printed.
+ *
+ * Return: The number of characters printed.
+ */
+
 int print_string(va_list args)
 {
     int len = 0; 
