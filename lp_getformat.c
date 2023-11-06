@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stddef.h>
 
+/**
+ * get_specifier - Returns the printing function associated with a specifier.
+ * @c: The specifier character.
+ *
+ * Return: A specifier_t struct containing the specifier character and its
+ * associated printing function, or NULL if the specifier is not found.
+ */
+
 specifier_t get_specifier(char c)
 {
     specifier_t format[] = {
