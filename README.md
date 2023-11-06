@@ -3,8 +3,6 @@
 # About lp_printchar.c
 ## Explaining the code
 
-Certainly, I'll break down the provided code into individual code blocks and explain it at a junior high level for your README.md document:
-
 ```c
 #include "main.h"
 #include <unistd.h>
