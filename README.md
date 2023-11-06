@@ -3,115 +3,65 @@
 # About lp_getformat.c
 ## Explaining the code
 
-In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
+Certainly, let's break down the provided code into individual code blocks and explain it at a junior high level for your README.md document:
 
 ```c
-#include <stdarg.h>
 #include "main.h"
 #include <stddef.h>
 ```
-These lines include necessary header files. The `#include` statements help bring in code and functions that the program will use.
+
+These lines include necessary header files. "main.h" is a custom header file specific to your project, and `<stddef.h>` is a standard C library header.
 
 ```c
 /**
- * _printf - Emulate the behavior of the printf function.
- * @format: A string with format specifiers.
- * Return: The number of characters printed (or -1 on error).
+ * get_specifier - Returns the printing function associated with a specifier.
+ * @c: The specifier character.
+ *
+ * Return: A specifier_t struct containing the specifier character and its
+ * associated printing function, or NULL if the specifier is not found.
  */
 ```
-This comment block is a description of a function named `_printf`. It tells you that this function is supposed to behave like the `printf` function you may have used before, which is used to print text to the screen. The `@format` is a special way to describe that the function expects a string as an argument. The `Return` part tells you what the function will return.
+
+This is a comment block that describes a function named `get_specifier`. It explains what the function does, what it takes as an argument, and what it returns. In this case, it returns a structure of type `specifier_t` that contains information about a format specifier or NULL if the specifier is not found.
 
 ```c
-int _printf(const char *format, ...)
-```
-This is the start of the `_printf` function. It takes a string called `format` as its argument and may also take additional arguments (denoted by `...`). In C, `...` is used to indicate a variable number of arguments.
-
-```c
-va_list args;
-int count = 0;
-```
-Here, we declare two variables. `va_list` is a data structure used to manage the variable arguments passed to the function. `args` will hold these variable arguments. `count` is initialized to zero and will be used to keep track of how many characters are printed.
-
-```c
-if (format == NULL)
-    return (-1);
-```
-This code checks if the `format` string is empty (NULL). If it is empty, the function returns -1 to indicate an error.
-
-```c
-va_start(args, format);
-```
-This line initializes the `args` variable, making it ready to read the variable arguments passed to the function.
-
-```c
-while (*format)
+specifier_t get_specifier(char c)
 {
-    // ...
+    specifier_t format[] = {
+        {'c', print_char},
+        {'s', print_string},
+        {'%', print_percent},
+        {'d', print_int},
+        {'i', print_int},
+        {0, NULL}
+    };
+    int i = 0;
+```
+
+This code defines the `get_specifier` function. It takes a single character `c` as an argument. Inside the function, an array of structures `format` is defined. Each structure contains two parts: a character (specifier) and a function that will print or handle that specifier.
+
+The `i` variable is initialized to 0, which will be used as an index to traverse the `format` array.
+
+```c
+    while (format[i].specifier)
+    {
+        if (format[i].specifier == c)
+        {
+            return format[i];
+        }
+        i++;
+    }
+```
+
+This part of the code uses a `while` loop to iterate through the `format` array. The loop continues as long as the `specifier` part of the current structure in the array is not 0 (indicating the end of the array).
+
+Inside the loop, it checks if the `specifier` in the current structure matches the character `c` that we're looking for. If it finds a match, it returns the corresponding structure from the `format` array, which contains information about the specifier and the function to handle it.
+
+```c
+    return format[i];
 }
 ```
-This is a loop that goes through each character in the `format` string until it reaches the end (the null terminator, which is a special character denoted by `\0`).
 
-```c
-specifier_t specifier;
-int (*specifier_func)(va_list);
-```
-Inside the loop, these two variables are declared. `specifier` is used to store a format specifier (like `%s` or `%d`), and `specifier_func` is a pointer to a function that will handle the format specifier.
+If the loop completes without finding a matching specifier, it returns the last structure from the `format` array. This means that the specifier was not found, and the function returns NULL.
 
-```c
-if (*format == '%')
-{
-    // ...
-}
-```
-This code block checks if the current character is a '%' sign, which is a special character used in format specifiers.
-
-```c
-format++;
-specifier = get_specifier(*format);
-specifier_func = specifier.print_func;
-```
-If the current character is '%', it moves to the next character and then calls a function `get_specifier` to determine what kind of format specifier is being used. It assigns the result to `specifier` and gets the corresponding function to handle that specifier and assigns it to `specifier_func`.
-
-```c
-if (specifier_func)
-    count += specifier_func(args);
-```
-If a valid specifier function was found, it calls that function with the variable arguments stored in `args` and adds the number of characters it printed to the `count`.
-
-```c
-else if (*format)
-{
-    count += _putchar('%');
-    count += _putchar(*format);
-}
-```
-If there was no valid specifier function, it prints '%' and the character immediately after '%' (like `%A` would print 'A').
-
-```c
-else
-    return (-1);
-```
-If the '%' sign was at the end of the string (no character after it), it returns -1 to indicate an error.
-
-```c
-else
-{
-    count += _putchar(*format);
-}
-```
-If the current character is not '%' (i.e., just regular text), it prints that character and adds 1 to the `count`.
-
-```c
-format++;
-```
-Finally, after handling the current character, it moves to the next character in the `format` string and continues the loop.
-
-```c
-va_end(args);
-```
-After the loop is done, it cleans up and releases the resources associated with the variable arguments.
-
-```c
-return (count);
-```
-The function returns the total count of characters printed.
+In summary, this code defines a function `get_specifier` that helps find the printing function associated with a given format specifier character (like 'c', 's', etc.). It does this by looking through an array of specifier-function pairs and returning the appropriate pair when it finds a match. If it doesn't find a match, it returns NULL to indicate that the specifier is not recognized.
