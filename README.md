@@ -17,7 +17,7 @@ To keep all files, and directories organized we created individual branches for 
 | :---------------------- | :---------------------:| :---------------------: |
 | `main`                  | prodction branch       | finished/bug free   |
 | `Brandon_Montezuma`     | author branch          | bio/notes   |
-| `lp_formats.c `               | contains main.c file   | branch   |
+| `lp_formats.c `               | contains formats for printf function   | branch   |
 | `lp_getformat.c `               | copycat printf function    | branch   |
 | `lp_printchar.c `             | print character Function | branch   |
 | `lp_printint.c `            | print Integer Function | branch   |
