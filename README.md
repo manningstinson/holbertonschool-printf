@@ -21,8 +21,8 @@ To keep all files, and directories organized we created individual branches for 
 | `lp_getformat.c `               | copycat printf function    | branch   |
 | `lp_printchar.c `             | print character Function | branch   |
 | `lp_printint.c `            | print Integer Function | branch   |
-| `lp_printpercent.c `           | print Percent Function       | branch  |
-| `lp_printstring.c `           | print String Function       | branch  |
+| `lp_printpercent.c `           | print percent Function       | branch  |
+| `lp_printstring.c `           | print string Function       | branch  |
 | `main.h `           | header file       | branch  |
 | `man_3_printf `           | custom printf man file       |  file  |
 | `scratchpad `           | scratchpad for testing       | branch  |
