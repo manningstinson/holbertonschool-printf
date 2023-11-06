@@ -2,6 +2,12 @@
 #include "main.h"
 #include <stddef.h>
 
+/**
+ * _printf - Emulate the behavior of the printf function.
+ * @format: A string with format specifiers.
+ * Return: The number of characters printed (or -1 on error).
+ */
+
 int _printf(const char *format, ...)
 {
     va_list args;
