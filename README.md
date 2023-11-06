@@ -2,7 +2,8 @@
 
 # About lp_printpercent.c
 ## Explaining the code
-Sure, let's break down the provided code into individual code blocks and explain it at a junior high level for your README.md document:
+
+In summary, this code defines a function `print_percent` that prints a single percent symbol '%' to the standard output. It doesn't use the variable argument list (`args`), and it always returns 1 to indicate that one character has been printed.
 
 ```c
 #include "main.h"
