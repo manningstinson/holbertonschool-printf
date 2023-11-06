@@ -14,7 +14,9 @@ int _printf(const char *format, ...)
     int count = 0;
 
     if (format == NULL)
-        return (-1);
+    {
+        return -1;
+    }
 
     va_start(args, format);
     while (*format)
@@ -29,14 +31,18 @@ int _printf(const char *format, ...)
             specifier_func = specifier.print_func;
 
             if (specifier_func)
+            {
                 count += specifier_func(args);
+            }
             else if (*format)
             {
                 count += _putchar('%');
                 count += _putchar(*format);
             }
             else
-                return (-1);
+            {
+                return -1;
+            }
         }
         else
         {
@@ -45,6 +51,6 @@ int _printf(const char *format, ...)
         format++;
     }
     va_end(args);
-    return (count);
+    return count;
 }
 

@@ -32,3 +32,4 @@ specifier_t get_specifier(char c)
 
     return format[i];
 }
+
