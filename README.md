@@ -17,14 +17,17 @@ To keep all files, and directories organized we created individual branches for 
 | :---------------------- | :---------------------:| :---------------------: |
 | `main`                  | prodction branch       | finished/bug free   |
 | `Brandon_Montezuma`     | author branch          | bio/notes   |
-| `main.c `               | contains main.c file   | working file   |
-| `main.h `               | contains main.h header file    | working file   |
-| `printf.c `             | custom printf function | working file   |
-| `putchar.c `            | custom putchar function| working file   |
-| `scratchpad `           | project scratchpad       | working file  |
-| `print-format-specifier-% `      | %% format specifier        | working file   |
-| `print-format-specifier-c `      | char format specifier         | working file   |
-| `print-format-specifier-s `      | string format specifier         |  working file   |
+| `lp_formats.c `               | contains main.c file   | working file   |
+| `lp_getformat.c `               | contains main.h header file    | working file   |
+| `lp_printchar.c `             | custom printf function | working file   |
+| `lp_printint.c `            | custom putchar function| working file   |
+| `lp_printpercent.c `           | project scratchpad       | working file  |
+| `lp_printstring.c `           | project scratchpad       | working file  |
+| `main.h `           | project scratchpad       | working file  |
+| `man_3_printf `           | project scratchpad       | working file  |
+
+
+
 
 <!--
 
