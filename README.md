@@ -3,7 +3,7 @@
 # About lp_formats.c
 ## Explaining the code
 
-Sure, I'll break down this code into individual code blocks and explain them at a junior high level.
+In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
 
 ```c
 #include <stdarg.h>
@@ -116,5 +116,4 @@ return (count);
 ```
 The function returns the total count of characters printed.
 
-In summary, this code defines a function called `_printf` that emulates the behavior of the `printf` function. It takes a format string with placeholders, processes it, and prints the corresponding values. The code uses a loop to go through the format string character by character, handling special format specifiers and printing regular text. The total count of characters printed is returned, and -1 is returned in case of an error.
 
