@@ -13,31 +13,16 @@ int print_int(va_list args)
     int n = va_arg(args, int);
     int len = 0;
     int divisor = 1;
-
-    if (n < 0)
-    {
+    if (n < 0) {
         len += _putchar('-');
         divisor = -divisor;
-        if (n == -2147483648)
-        {
-            len += _putchar('2');
-            n %= 1000000000;
-        }
-        n = -n;
     }
-
-    while (divisor <= n / 10)
-    {
+    while ((n / divisor) > 9 || (n / divisor) < -9)
         divisor *= 10;
-    }
-
-    while (divisor > 0)
-    {
+    while (divisor != 0) {
         len += _putchar((n / divisor) + '0');
-        n %= divisor;
+        n = n % divisor;
         divisor /= 10;
     }
-
     return len;
 }
-
