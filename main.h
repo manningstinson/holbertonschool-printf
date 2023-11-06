@@ -3,6 +3,12 @@
 #include <stddef.h>
 #include <stdarg.h>
 
+/**
+ * struct specifier - Structure to hold format specifiers and their associated functions.
+ * @specifier: The format specifier character.
+ * @print_func: A pointer to the corresponding printing function.
+ */
+
 typedef struct specifier
 {
         char specifier;
