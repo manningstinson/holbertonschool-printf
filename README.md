@@ -17,14 +17,14 @@ To keep all files, and directories organized we created individual branches for 
 | :---------------------- | :---------------------:| :---------------------: |
 | `main`                  | prodction branch       | finished/bug free   |
 | `Brandon_Montezuma`     | author branch          | bio/notes   |
-| `lp_formats.c `               | contains main.c file   | working file   |
-| `lp_getformat.c `               | contains main.h header file    | working file   |
-| `lp_printchar.c `             | custom printf function | working file   |
-| `lp_printint.c `            | custom putchar function| working file   |
-| `lp_printpercent.c `           | project scratchpad       | working file  |
-| `lp_printstring.c `           | project scratchpad       | working file  |
-| `main.h `           | project scratchpad       | working file  |
-| `man_3_printf `           | project scratchpad       | working file  |
+| `lp_formats.c `               | contains main.c file   | branch   |
+| `lp_getformat.c `               | copycat printf function    | branch   |
+| `lp_printchar.c `             | print character Function | branch   |
+| `lp_printint.c `            | print Integer Function | branch   |
+| `lp_printpercent.c `           | print Percent Function       | branch  |
+| `lp_printstring.c `           | print String Function       | branch  |
+| `main.h `           | header file       | branch  |
+| `man_3_printf `           | custom printf man file       |  file  |
 
 
 
