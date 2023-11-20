@@ -12,11 +12,11 @@ This line includes a custom header file named "main.h." Custom header files ofte
 
 ```c
 /**
- * print_percent - Prints a percent symbol to the standard output.
- * @args: A va_list (not used in this function).
- *
- * Return: The number of characters printed (1).
- */
+
+print_percent - Prints a percent symbol to the standard output.
+@args: A va_list (not used in this function).
+Return: The number of characters printed (1).
+*/
 ```
 This is a comment block that describes a function named `print_percent`. It explains what the function does, what it takes as an argument, and what it returns. In this case, it returns the number of characters printed (which is always 1), and it doesn't use the `args` argument.
 
